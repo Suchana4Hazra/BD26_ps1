@@ -563,15 +563,11 @@ def load_extra_data():
 @st.cache_data
 def load_metadata():
     """Load model metadata"""
-    possible_paths = [
-        'app/models/model_metadata.json',
-        'models/model_metadata.json',
-        './model_metadata.json'
-    ]
+    possible_paths = ['', 'app/', '../', './data/']
     
     for path in possible_paths:
         try:
-            with open(path, 'r') as f:
+            with open(path + "model_metadata.json", 'r') as f:
                 return json.load(f)
         except:
             continue
