@@ -687,8 +687,8 @@ st.sidebar.subheader("👨‍💻 Project Team")
 
 st.sidebar.markdown("""
 **Lead Developer:** Suchana Hazra  
-**Developer 1:** Contributor 2  
-**Developer 2:** Contributor 3  
+**Developer 1:** Argha Pal
+**Developer 2:** Meghma Das  
 """)
 
 
