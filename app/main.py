@@ -566,7 +566,7 @@ def load_metadata():
     possible_paths = [
         'app/models/model_metadata.json',
         'models/model_metadata.json',
-        './models/model_metadata.json'
+        './model_metadata.json'
     ]
     
     for path in possible_paths:

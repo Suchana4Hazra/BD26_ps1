@@ -1,0 +1,45 @@
+{
+  "training_date": "2026-02-06 15:56:00",
+  "dataset_stats": {
+    "total_ratings": 100836,
+    "total_users": 610,
+    "total_movies": 9724,
+    "train_size": 100226,
+    "test_size": 610
+  },
+  "models": {
+    "popularity": "PopularityRecommender",
+    "user_cf": "UserUserCF(k=20)",
+    "item_cf": "ItemItemCF(k=20)",
+    "svd": "Not trained",
+    "content": "ContentBasedRecommender",
+    "hybrid": "HybridRecommender(weights=user_cf:0.4, item_cf:0.4, content:0.2)"
+  },
+  "evaluation": {
+    "Hybrid": {
+      "Precision@K": 0.014000000000000004,
+      "Recall@K": 0.14,
+      "NDCG@K": 0.06886596772105275
+    },
+    "User-User CF": {
+      "Precision@K": 0.005,
+      "Recall@K": 0.05,
+      "NDCG@K": 0.023956590179437107
+    },
+    "Item-Item CF": {
+      "Precision@K": 0.013000000000000003,
+      "Recall@K": 0.13,
+      "NDCG@K": 0.06589447577449403
+    },
+    "Content-Based": {
+      "Precision@K": 0.001,
+      "Recall@K": 0.01,
+      "NDCG@K": 0.0030102999566398118
+    }
+  },
+  "diversity": {
+    "Catalog Coverage": 0.00739067953192363,
+    "Intra-List Diversity": 1.214
+  },
+  "surprise_library_available": false
+}
