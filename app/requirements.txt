@@ -6,3 +6,6 @@ scipy
 matplotlib
 seaborn
 joblib
+scikit-surprise==1.1.3
+cython
+plotly
