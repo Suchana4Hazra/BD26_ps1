@@ -681,11 +681,10 @@ st.sidebar.caption(f"Last trained: {metadata.get('training_date', 'N/A')}")
 st.sidebar.markdown("---")
 st.sidebar.subheader("👨‍💻 Project Team")
 
-st.sidebar.markdown("""
-**Lead Developer:** Suchana Hazra  
-**Developer 1:** Argha Pal <br> 
-**Developer 2:** Meghma Das  
-""")
+st.sidebar.write("**Lead Developer:** Suchana Hazra")
+st.sidebar.write("**Developer 1:** Argha Pal")
+st.sidebar.write("**Developer 2:** Meghma Das")
+
 
 
 # ============================================================================
